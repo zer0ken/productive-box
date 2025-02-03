@@ -5,6 +5,8 @@ on:
       - master
   schedule:
     - cron: "0 0 * * *"
+  # allow user to manually start the action
+  workflow_dispatch:
 jobs:
   update-gist:
     runs-on: ubuntu-latest
